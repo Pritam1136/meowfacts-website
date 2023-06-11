@@ -43,8 +43,10 @@ export default function Body() {
         </Link>
 
         <button className="m-5 rounded-2xl p-3 outline transition duration-300 ease-in hover:bg-slate-600 hover:text-white">
-          BUY ME A COFFEE
-          <FontAwesomeIcon className="p-2 align-middle" icon={faMugSaucer} />
+          <a href="https://www.paypal.com/paypalme/animalproject">
+            Sponsor project
+            <FontAwesomeIcon className="p-2 align-middle" icon={faMugSaucer} />
+          </a>
         </button>
       </div>
       <div className="mt-28 mb-10 flex justify-center align-middle text-5xl ">
