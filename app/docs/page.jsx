@@ -1,6 +1,6 @@
 export default function Docs() {
   return (
-    <div className="font-mono">
+    <div className="font-mono text-white">
       <div className="h-px w-auto bg-slate-500"></div>
       <div className="flex min-h-screen flex-col items-center justify-center bg-gray-900">
         <div className="mx-auto max-w-3xl px-4 py-8">
@@ -12,62 +12,233 @@ export default function Docs() {
             feline friends. It offers real-time randomization, ensuring each
             request returns a unique fact. Integration is easy with
             developer-friendly documentation and flexible endpoints. Regular
-            updates keep the content fresh and relevant. The API is lightweight,
-            fast, and reliable, delivering a seamless user experience. Use it
-            for websites, blogs, mobile apps, or social media bots. Let the
-            Random Cat Fact API enchant your audience with the captivating world
-            of cats in just 10 lines of code!
+            updates keep the content fresh and relevant.
           </p>
           <h2 className="mb-4 text-2xl font-bold text-indigo-500">
             Getting Started
           </h2>
-          <p className="mb-6 text-white">
-            To get started with SnippetHub, follow the steps below:
+          <h3>Example Usage</h3>
+          <div className="flex items-center justify-center">
+            <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+              <div className="m-5 p-1 text-white">
+                <p>
+                  fetch("https://meowfacts.herokuapp.com/") .then((response) =
+                  {">"}
+                  response.json()) .then((data) ={">"} console.log(data))
+                  .catch((error) ={">"} console.log(error));
+                </p>
+              </div>
+            </div>
+          </div>
+          <p>Response</p>
+          <div className="flex items-center justify-center">
+            <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+              <div className="m-5 p-1 text-white">
+                <p>curl https://meowfacts.herokuapp.com/</p>
+              </div>
+            </div>
+          </div>
+          <h3 className="mb-4 text-2xl font-bold text-indigo-500">
+            Advanced Usage
+          </h3>
+          <p>
+            You can request more than one fact at a time by using the GET param{" "}
+            count
           </p>
-          <ol className="mb-8 list-inside list-decimal text-white">
-            <li>Create an account on SnippetHub.</li>
-            <li>Login to your account and explore the available features.</li>
-            <li>
-              Manage your snippets by creating, editing, and deleting them.
-            </li>
-            <li>Share your snippets with the SnippetHub community.</li>
-          </ol>
-          <h2 className="mb-4 text-2xl font-bold text-indigo-500">Features</h2>
-          <ul className="mb-8 list-inside list-disc text-white">
-            <li>Snippet creation and editing.</li>
-            <li>Search for snippets based on tags or keywords.</li>
-            <li>Like and comment on snippets.</li>
-            <li>Follow other users and discover their snippets.</li>
-            <li>Bookmark your favorite snippets for quick access.</li>
-          </ul>
-          <h2 className="mb-4 text-2xl font-bold text-indigo-500">
-            Best Snippets
-          </h2>
-          <p className="mb-6 text-white">
-            Discover the best snippets for buttons, cards, headers, and footers,
-            all written in React and Tailwind CSS:
+          <div className="flex items-center justify-center">
+            <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+              <div className="m-5 p-1 text-white">
+                <p>curl https://meowfacts.herokuapp.com/?count=3</p>
+              </div>
+            </div>
+          </div>
+          <p>Response</p>
+          <div className="flex items-center justify-center">
+            <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+              <div className="m-5 p-1 text-white">
+                <p>curl https://meowfacts.herokuapp.com/</p>
+              </div>
+            </div>
+          </div>
+          <p>
+            You can request a specific fact if you know the ID / order it is buy
+            passing the GET param id
           </p>
-          {/* Add code snippets or links to the best snippets here */}
-          <h2 className="mb-4 text-2xl font-bold text-indigo-500">
-            Customization Options
-          </h2>
-          <p className="mb-6 text-white">
-            SnippetHub provides various customization options to make your
-            snippets unique and tailored to your needs. Customize colors,
-            styles, and layouts to create visually appealing snippets.
+          <div className="flex items-center justify-center">
+            <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+              <div className="m-5 p-1 text-white">
+                <p>curl https://meowfacts.herokuapp.com/?id=3</p>
+              </div>
+            </div>
+          </div>
+          <p>Response</p>
+          <div className="flex items-center justify-center">
+            <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+              <div className="m-5 p-1 text-white">
+                <p>curl https://meowfacts.herokuapp.com/</p>
+              </div>
+            </div>
+          </div>
+          <h3 className="mb-4 text-2xl font-bold text-indigo-500">
+            Language Support
+          </h3>
+          <p>
+            You can request the response in different languages by using the GET
+            param lang
           </p>
-          <h2 className="mb-4 text-2xl font-bold text-indigo-500">
-            Community and Collaboration
-          </h2>
-          <p className="mb-6 text-white">
-            SnippetHub fosters a thriving community of developers. Connect with
-            fellow developers, collaborate on projects, and share your knowledge
-            and expertise.
+          <div className="flex items-center justify-center">
+            <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+              <div className="m-5 p-1 text-white">
+                <p>curl https://meowfacts.herokuapp.com/?lang=ukr</p>
+              </div>
+            </div>
+          </div>
+          <p>Response</p>
+          <div className="flex items-center justify-center">
+            <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+              <div className="m-5 p-1 text-white">
+                <p>curl https://meowfacts.herokuapp.com/?lang=ukr</p>
+              </div>
+            </div>
+          </div>
+          <h4 className="pb-7">Supported Languages</h4>
+          <p className="pb-1">
+            The supported languages are listed below, you can use any of the{" "}
+            lang Values in the first column as a lang param.
           </p>
-          <p className="text-white">
-            For any further assistance or inquiries, please contact our support
-            team at support@snippethub.com.
+          <p className="pb-6">
+            "?lang=esp" and "?lang=esp-mx" will both return spanish for your
+            response, and simply using the ISO-639-1 will default to esp-mx for
+            simplicity.
           </p>
+          <div className="flex items-center justify-center">
+            <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+              <div className="m-5 p-1 text-white">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>LANG Variable</th>
+                      <th>
+                        <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_s">
+                          ISO 639-1
+                        </a>
+                      </th>
+                      <th>Language Name</th>
+                      <th>Localization (country)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>eng-us</td>
+                      <td>eng</td>
+                      <td>English</td>
+                      <td>USA</td>
+                    </tr>
+                    <tr>
+                      <td>ces-cz or cze-cz</td>
+                      <td>cze (B) ces (T)</td>
+                      <td>Czech</td>
+                      <td>CZ</td>
+                    </tr>
+                    <tr>
+                      <td>ger-de</td>
+                      <td>ger</td>
+                      <td>German</td>
+                      <td>DE</td>
+                    </tr>
+                    <tr>
+                      <td>esp-es</td>
+                      <td>esp</td>
+                      <td>Spanish</td>
+                      <td>ES</td>
+                    </tr>
+                    <tr>
+                      <td>esp-mx</td>
+                      <td>esp</td>
+                      <td>Spanish (default)</td>
+                      <td>MX</td>
+                    </tr>
+                    <tr>
+                      <td>rus-ru</td>
+                      <td>rus</td>
+                      <td>Russian</td>
+                      <td>RUS</td>
+                    </tr>
+                    <tr>
+                      <td>por-br</td>
+                      <td>por</td>
+                      <td>Portuguese</td>
+                      <td>BR</td>
+                    </tr>
+                    <tr>
+                      <td>tl-fil</td>
+                      <td>fil</td>
+                      <td>Filipino</td>
+                      <td>PH</td>
+                    </tr>
+                    <tr>
+                      <td>ukr-ua</td>
+                      <td>ukr</td>
+                      <td>Ukrainian</td>
+                      <td>UA</td>
+                    </tr>
+                    <tr>
+                      <td>urd-ur</td>
+                      <td>urd</td>
+                      <td>Urdu</td>
+                      <td>UR</td>
+                    </tr>
+                    <tr>
+                      <td>ita-it</td>
+                      <td>ita</td>
+                      <td>Italian</td>
+                      <td>IT</td>
+                    </tr>
+                    <tr>
+                      <td>zho-tw</td>
+                      <td>zho</td>
+                      <td>Chinese</td>
+                      <td>TW (Taiwan)</td>
+                    </tr>
+                  </tbody>
+                </table>{" "}
+              </div>
+            </div>
+          </div>
+          <details>
+            <summary>
+              Help us expand and improve Internationalization on this API (Click
+              to expand)
+            </summary>
+            <h3>Help us expand and improve Internationalization on this API</h3>
+
+            <p>
+              <b>Note:</b> We are trying to follow the browser's language tags,
+              which are formally defined in{" "}
+              <a href="https://datatracker.ietf.org/doc/html/rfc5646">
+                RFC 5646
+              </a>
+              , which rely on the{" "}
+              <a href="https://en.wikipedia.org/wiki/ISO_639">ISO 639</a>{" "}
+              standard (quite often the{" "}
+              <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_s">
+                639-1 list
+              </a>
+              ) for{" "}
+              <a href="https://en.wikipedia.org/wiki/Language_">language s</a>{" "}
+              to be used.
+            </p>
+
+            <p>
+              We would love it if you helped this project by taking a look at
+              our{" "}
+              <a href="https://github.com/wh-iterabb-it/meowfacts/issues/175">
+                Call for Contributors
+              </a>{" "}
+              to see if you can make a contribution that helps us be more
+              inclusive and support more languages.{" "}
+            </p>
+          </details>
         </div>
       </div>
     </div>

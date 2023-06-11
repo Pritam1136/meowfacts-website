@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-10">
         <h1 className=" text-lg font-bold sm:text-4xl">
           <Link href={"/"}>
-            <FontAwesomeIcon className="pr-3" icon={faCat} flip />
+            <FontAwesomeIcon className="pr-3" icon={faCat} />
             FACTS
           </Link>
         </h1>
