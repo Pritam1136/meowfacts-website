@@ -33,7 +33,7 @@ export default function Body() {
       </p>
       <div className="mt-16 flex justify-center">
         <Link href={"/docs"}>
-          <button className="m-5 rounded-2xl p-3  outline transition duration-300 ease-in hover:bg-slate-600 hover:text-white">
+          <button className="m-5 rounded-2xl p-3  outline transition duration-300 ease-in hover:bg-slate-600 hover:text-white hover:outline-indigo-500">
             GET STARTED
             <FontAwesomeIcon
               className="p-2  align-middle"
@@ -41,13 +41,12 @@ export default function Body() {
             />
           </button>
         </Link>
-
-        <button className="m-5 rounded-2xl p-3 outline transition duration-300 ease-in hover:bg-slate-600 hover:text-white">
-          <a href="https://www.paypal.com/paypalme/animalproject">
+        <a href="https://www.paypal.com/paypalme/animalproject">
+          <button className="m-5 rounded-2xl p-3 outline transition duration-300 ease-in hover:bg-slate-600 hover:text-white hover:outline-indigo-500">
             Sponsor project
             <FontAwesomeIcon className="p-2 align-middle" icon={faMugSaucer} />
-          </a>
-        </button>
+          </button>
+        </a>
       </div>
       <div className="mt-28 mb-10 flex justify-center align-middle text-5xl ">
         <FontAwesomeIcon icon={faPaw} bounce />
@@ -63,7 +62,7 @@ export default function Body() {
       </div>
       <div className="flex justify-center align-middle mb-14 mt-4">
         <button
-          className=" rounded-2xl p-3  outline transition duration-500 ease-in-out hover:bg-slate-600 hover:text-white"
+          className=" rounded-2xl p-3  outline transition duration-500 ease-in-out hover:bg-slate-600 hover:text-white hover:outline-indigo-500"
           onClick={fetchData}
         >
           RUN
