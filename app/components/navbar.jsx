@@ -27,7 +27,7 @@ export default function Navbar() {
               <Link href={"/docs"}>Docs</Link>
             </li>
             <li>
-              <a href="https://github.com/wh-iterabb-it/meowfacts">
+              <a href="https://github.com/Pritam1136/meowfacts-website">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
