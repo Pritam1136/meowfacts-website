@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function Docs() {
   return (
     <div className="font-mono text-white  bg-gray-900 text-center">

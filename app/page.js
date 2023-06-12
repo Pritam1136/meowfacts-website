@@ -11,10 +11,14 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Body() {
+  const initialData = `"Mother cats teach their kittens to use the litter box."`;
+
+  const [data, setData] = useState(initialData)
   async function fetchData() {
     try {
       const res = await fetch("https://meowfacts.herokuapp.com/");
-      const data = await res.json();
+      const data1 = await res.json();
+      setData(data1.data); // Update the data state with the value from data1
     } catch (error) {
       console.error(error);
     }
@@ -72,8 +76,7 @@ export default function Body() {
       <div className="items-centre flex justify-center">
         <div className="flex max-w-screen-md justify-center bg-slate-950 sm:m-14">
           <div className="m-5 p-1 text-white">
-            quote: 'In cricket, my superhero is Sachin Tendulkar. He h…ways been
-            my hero and will continue to remain so.', source: 'Virat Kohli'
+           {data}
           </div>
         </div>
       </div>
