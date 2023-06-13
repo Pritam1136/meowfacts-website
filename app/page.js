@@ -20,7 +20,7 @@ export default function Body() {
       const data1 = await res.json();
       setData(data1.data); // Update the data state with the value from data1
     } catch (error) {
-      console.error(error);
+      setData("Error on fetching data, Please check your connection.");
     }
   }
 
