@@ -20,7 +20,7 @@ export default function Docs() {
       </h2>
       <h3 className="p-4">Example Usage</h3>
       <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 py-4">
           <div className=" text-white">
             fetch("https://meowfacts.herokuapp.com/") .then((response) ={">"}
             response.json()) .then((data) ={">"} console.log(data))
@@ -44,7 +44,7 @@ export default function Docs() {
         count
       </p>
       <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 py-4">
           <div className="text-white">
             fetch("https://meowfacts.herokuapp.com/?count=3") .then((response) =
             {">"}
@@ -72,7 +72,7 @@ export default function Docs() {
         passing the GET param id
       </p>
       <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 py-4">
           <div className="text-white">
             fetch("https://meowfacts.herokuapp.com/?id=3") .then((response) =
             {">"}response.json()) .then((data) ={">"} console.log(data))
@@ -121,9 +121,9 @@ export default function Docs() {
         "?lang=esp-mx" will both return spanish for your response, and simply
         using the ISO-639-1 will default to esp-mx for simplicity.
       </p>
-      <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 ">
-          <div className="m-5 p-1 text-white">
+      <div className="flex items-center justify-center overflow-x-auto">
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 ">
+          <div className=" p-1 text-white">
             <table>
               <thead>
                 <tr>
@@ -220,6 +220,7 @@ export default function Docs() {
           Help us expand and improve Internationalization on this API (Click to
           expand)
         </summary>
+        <div className="py-6">
         <h3>Help us expand and improve Internationalization on this API</h3>
 
         <p>
@@ -266,6 +267,7 @@ export default function Docs() {
           to see if you can make a contribution that helps us be more inclusive
           and support more languages.
         </p>
+      </div>
       </details>
     </div>
   );
