@@ -20,11 +20,9 @@ export default function Docs() {
       </h2>
       <h3 className="p-4">Example Usage</h3>
       <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 py-4">
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 p-6">
           <div className=" text-white">
-            fetch("https://meowfacts.herokuapp.com/") .then((response) ={">"}
-            response.json()) .then((data) ={">"} console.log(data))
-            .catch((error) ={">"} console.log(error));
+            "https://meowfacts.herokuapp.com/"
           </div>
         </div>
       </div>
@@ -44,12 +42,9 @@ export default function Docs() {
         count
       </p>
       <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 py-4">
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 p-6">
           <div className="text-white">
-            fetch("https://meowfacts.herokuapp.com/?count=3") .then((response) =
-            {">"}
-            response.json()) .then((data) ={">"} console.log(data))
-            .catch((error) ={">"} console.log(error));
+          curl https://meowfacts.herokuapp.com/?count=3
           </div>
         </div>
       </div>
@@ -72,11 +67,9 @@ export default function Docs() {
         passing the GET param id
       </p>
       <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 py-4">
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 p-6">
           <div className="text-white">
-            fetch("https://meowfacts.herokuapp.com/?id=3") .then((response) =
-            {">"}response.json()) .then((data) ={">"} console.log(data))
-            .catch((error) ={">"} console.log(error));
+          curl https://meowfacts.herokuapp.com/?id=3
           </div>
         </div>
       </div>
@@ -115,7 +108,7 @@ export default function Docs() {
         </div>
       </div>
       <h4 className="py-7">Supported Languages</h4>
-      <p className="pb-1 p-4">
+      <p className="pb-10 p-4">
         The supported languages are listed below, you can use any of the lang
         Values in the first column as a lang param. "?lang=esp" and
         "?lang=esp-mx" will both return spanish for your response, and simply
@@ -216,7 +209,7 @@ export default function Docs() {
         </div>
       </div>
       <details>
-        <summary>
+        <summary className="pt-6">
           Help us expand and improve Internationalization on this API (Click to
           expand)
         </summary>
