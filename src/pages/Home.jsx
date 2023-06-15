@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client";
+/* eslint-disable no-unused-vars */
 import React from "react";
 import {
   faAngleRight,
@@ -7,13 +7,13 @@ import {
   faPaw,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
-export default function Body() {
+export const Home = () => {
   const initialData = `"Mother cats teach their kittens to use the litter box."`;
 
-  const [data, setData] = useState(initialData)
+  const [data, setData] = useState(initialData);
   async function fetchData() {
     try {
       const res = await fetch("https://meowfacts.herokuapp.com/");
@@ -25,9 +25,9 @@ export default function Body() {
   }
 
   return (
-    <div className="font-serif bg-slate-900 text-white">
-      <div className="w-auto h-px bg-indigo-500 "></div>
-      <h1 className="px-12 mb-8 pt-8 sm:pt-36 flex justify-center font-mono  text-5xl text-indigo-500 sm:text-7xl">
+    <div className="bg-slate-900 font-serif text-white">
+      <div className="h-px w-auto bg-indigo-500 "></div>
+      <h1 className="mb-8 flex justify-center px-12 pt-8 font-mono text-5xl  text-indigo-500 sm:pt-36 sm:text-7xl">
         MEOWFACTS
       </h1>
       <p className=" m-7 mt-12 flex h-7 justify-center p-1  align-middle text-xl font-thin ">
@@ -37,7 +37,7 @@ export default function Body() {
         Powered by React.js, Express.js and tailwindCSS
       </p>
       <div className="mt-16 flex justify-center">
-        <Link href={"/docs"}>
+        <Link to={"/docs"}>
           <button className="m-5 rounded-2xl p-3  outline transition duration-300 ease-in hover:bg-slate-600 hover:text-white hover:outline-indigo-500">
             GET STARTED
             <FontAwesomeIcon
@@ -53,7 +53,7 @@ export default function Body() {
           </button>
         </a>
       </div>
-      <div className="mt-28 mb-10 flex justify-center align-middle text-5xl ">
+      <div className="mb-10 mt-28 flex justify-center align-middle text-5xl ">
         <FontAwesomeIcon icon={faPaw} bounce />
       </div>
       <div className="flex items-center justify-center">
@@ -65,7 +65,7 @@ export default function Body() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center align-middle mb-14 mt-4">
+      <div className="mb-14 mt-4 flex justify-center align-middle">
         <button
           className=" rounded-2xl p-3  outline transition duration-500 ease-in-out hover:bg-slate-600 hover:text-white hover:outline-indigo-500"
           onClick={fetchData}
@@ -75,11 +75,9 @@ export default function Body() {
       </div>
       <div className="items-centre flex justify-center">
         <div className="flex max-w-screen-md justify-center bg-slate-950 sm:m-14">
-          <div className="m-5 p-1 text-white">
-           {data}
-          </div>
+          <div className="m-5 p-1 text-white">{data}</div>
         </div>
       </div>
     </div>
   );
-}
+};

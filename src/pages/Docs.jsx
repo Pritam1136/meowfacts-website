@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-export default function Docs() {
+export const Docs = () => {
   return (
-    <div className="font-mono text-white  bg-gray-900 text-center">
-      <div className="w-auto h-px bg-indigo-500 "></div>
-      <h1 className="mb-6 text-4xl font-bold text-indigo-500 p-4 text-center">
+    <div className="bg-gray-900 text-center  font-mono text-white">
+      <div className="h-px w-auto bg-indigo-500 "></div>
+      <h1 className="mb-6 p-4 text-center text-4xl font-bold text-indigo-500">
         MEOWFACTS
       </h1>
-      <p className="pb-12 text-white p-4">
+      <p className="p-4 pb-12 text-white">
         Introducing the Random Cat Fact API - Your Gateway to Feline
         Fascination! With diverse and engaging cat facts, this API provides a
         constant supply of captivating information about our beloved feline
@@ -20,10 +20,8 @@ export default function Docs() {
       </h2>
       <h3 className="p-4">Example Usage</h3>
       <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 p-6">
-          <div className=" text-white">
-            "https://meowfacts.herokuapp.com/"
-          </div>
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 p-6 sm:m-14">
+          <div className=" text-white">"https://meowfacts.herokuapp.com/"</div>
         </div>
       </div>
       <p className="p-4">Response</p>
@@ -34,7 +32,7 @@ export default function Docs() {
           </div>
         </div>
       </div>
-      <h3 className="mb-4 text-2xl font-bold text-indigo-500 pt-6 pb-4 p-4 text-center">
+      <h3 className="mb-4 p-4 pb-4 pt-6 text-center text-2xl font-bold text-indigo-500">
         Advanced Usage
       </h3>
       <p className="p-4">
@@ -42,9 +40,9 @@ export default function Docs() {
         count
       </p>
       <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 p-6">
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 p-6 sm:m-14">
           <div className="text-white">
-          curl https://meowfacts.herokuapp.com/?count=3
+            curl https://meowfacts.herokuapp.com/?count=3
           </div>
         </div>
       </div>
@@ -67,9 +65,9 @@ export default function Docs() {
         passing the GET param id
       </p>
       <div className="flex items-center justify-center">
-        <div className=" flex max-w-screen-md justify-center bg-slate-950 sm:m-14 p-6">
+        <div className=" flex max-w-screen-md justify-center bg-slate-950 p-6 sm:m-14">
           <div className="text-white">
-          curl https://meowfacts.herokuapp.com/?id=3
+            curl https://meowfacts.herokuapp.com/?id=3
           </div>
         </div>
       </div>
@@ -82,7 +80,7 @@ export default function Docs() {
         </div>
       </div>
 
-      <h3 className="mb-4 pt-4 pb-4 text-2xl font-bold text-indigo-500 text-center">
+      <h3 className="mb-4 pb-4 pt-4 text-center text-2xl font-bold text-indigo-500">
         Language Support
       </h3>
       <p className="py-6">
@@ -108,7 +106,7 @@ export default function Docs() {
         </div>
       </div>
       <h4 className="py-7">Supported Languages</h4>
-      <p className="pb-10 p-4">
+      <p className="p-4 pb-10">
         The supported languages are listed below, you can use any of the lang
         Values in the first column as a lang param. "?lang=esp" and
         "?lang=esp-mx" will both return spanish for your response, and simply
@@ -214,54 +212,54 @@ export default function Docs() {
           expand)
         </summary>
         <div className="py-6">
-        <h3>Help us expand and improve Internationalization on this API</h3>
+          <h3>Help us expand and improve Internationalization on this API</h3>
 
-        <p>
-          <b>Note:</b> We are trying to follow the browser's language tags,
-          which are formally defined in{" "}
-          <a
-            href="https://datatracker.ietf.org/doc/html/rfc5646"
-            className="bg-indigo-500"
-          >
-            RFC 5646
-          </a>
-          , which rely on the{" "}
-          <a
-            href="https://en.wikipedia.org/wiki/ISO_639"
-            className="bg-indigo-500"
-          >
-            ISO 639
-          </a>
-          {""} standard (quite often the{" "}
-          <a
-            href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_s"
-            className="bg-indigo-500"
-          >
-            639-1 list
-          </a>
-          ) for{" "}
-          <a
-            href="https://en.wikipedia.org/wiki/Language_"
-            className="bg-indigo-500"
-          >
-            languages
-          </a>{" "}
-          to be used.
-        </p>
+          <p>
+            <b>Note:</b> We are trying to follow the browser's language tags,
+            which are formally defined in{" "}
+            <a
+              href="https://datatracker.ietf.org/doc/html/rfc5646"
+              className="bg-indigo-500"
+            >
+              RFC 5646
+            </a>
+            , which rely on the{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/ISO_639"
+              className="bg-indigo-500"
+            >
+              ISO 639
+            </a>
+            {""} standard (quite often the{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_s"
+              className="bg-indigo-500"
+            >
+              639-1 list
+            </a>
+            ) for{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Language_"
+              className="bg-indigo-500"
+            >
+              languages
+            </a>{" "}
+            to be used.
+          </p>
 
-        <p>
-          We would love it if you helped this project by taking a look at our{" "}
-          <a
-            href="https://github.com/wh-iterabb-it/meowfacts/issues/175"
-            className="bg-indigo-500"
-          >
-            Call for Contributors
-          </a>
-          to see if you can make a contribution that helps us be more inclusive
-          and support more languages.
-        </p>
-      </div>
+          <p>
+            We would love it if you helped this project by taking a look at our{" "}
+            <a
+              href="https://github.com/wh-iterabb-it/meowfacts/issues/175"
+              className="bg-indigo-500"
+            >
+              Call for Contributors
+            </a>
+            to see if you can make a contribution that helps us be more
+            inclusive and support more languages.
+          </p>
+        </div>
       </details>
     </div>
   );
-}
+};

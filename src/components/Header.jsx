@@ -1,11 +1,11 @@
-"use client";
+/* eslint-disable no-unused-vars */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCat } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
-export default function Navbar() {
+export const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -16,15 +16,15 @@ export default function Navbar() {
     <header className="bg-gray-900 py-7 text-white">
       <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-10">
         <h1 className=" text-lg font-bold sm:text-4xl">
-          <Link href={"/"}>
+          <Link to={"/"}>
             <FontAwesomeIcon className="pr-3" icon={faCat} />
             FACTS
           </Link>
         </h1>
         <nav className={`sm:block ${isNavOpen ? "block" : "hidden"}`}>
-          <ul className="flex space-x-6 sm:text-3xl text-base">
+          <ul className="flex space-x-6 text-base sm:text-3xl">
             <li>
-              <Link href={"/docs"}>Docs</Link>
+              <Link to={"/docs"}>Docs</Link>
             </li>
             <li>
               <a href="https://github.com/Pritam1136/meowfacts-website">
@@ -59,4 +59,4 @@ export default function Navbar() {
       </div>
     </header>
   );
-}
+};
