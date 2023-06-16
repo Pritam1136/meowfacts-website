@@ -1,6 +1,6 @@
 # meowfacts website
 
-This website is designed to showcase the (MeowFact API)[https://github.com/wh-iterabb-it/meowfacts], which provides random cat facts to users. The website allows users to access and display these cat facts in a user-friendly manner. This README file provides an overview of the website and instructions on how to set it up and use it.
+This website is designed to showcase the [MeowFact API](https://github.com/wh-iterabb-it/meowfacts), which provides random cat facts to users. The website allows users to access and display these cat facts in a user-friendly manner. This README file provides an overview of the website and instructions on how to set it up and use it.
 
 ### The CatFact API website offers the following features:
 
